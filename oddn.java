@@ -7,7 +7,7 @@ public class oddn
   int n=in.nextInt();
   int m=in.nextInt();
       for(int i=n+1;i<m;i++){
-        if(i%2==1){
+        if(i%2==0){
         System.out.print(i+" ");
         }
     }
