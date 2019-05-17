@@ -12,7 +12,7 @@ public class Main
     
     Arrays.sort(arr);
     
-    for(int i=0;i<n;i+=2){
+    for(int i=0;i<n-1;i+=2){
         if(arr[i]!=arr[i+1]){
         System.out.print(arr[i]);
         break;
