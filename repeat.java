@@ -26,7 +26,8 @@ public class Main
 	}
 	else{
 	    for(Integer ki:res){
-	        System.out.print(ki+" ");
+	        System.out.print(ki);
+		    break;
 	    }
 	}
 	
