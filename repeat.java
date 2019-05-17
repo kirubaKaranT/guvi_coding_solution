@@ -5,6 +5,7 @@ public class Main
 	Scanner in=new Scanner(System.in);
 	int n=in.nextInt();
 	HashSet<Integer> hash=new HashSet<Integer>();
+	TreeSet<Integer> res=new TreeSet<Integer>();
 	int[] arr=new int[n];
 	for(int i=0;i<n;i++)
 	arr[i]=in.nextInt();
@@ -17,11 +18,16 @@ public class Main
 	        hash.add(k);
 	    }
 	    else{
-	        System.out.print(k+" ");
+	        res.add(k);
 	    }
 	}
-	if(hash.isEmpty()){
+	if(res.isEmpty()){
 	    System.out.print("unique");
+	}
+	else{
+	    for(Integer ki:res){
+	        System.out.print(ki+" ");
+	    }
 	}
 	
 	
