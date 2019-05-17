@@ -10,14 +10,16 @@ public class Main
     for(int i=0;i<n;i++)
     arr[i]=in.nextInt();
     
-    Arrays.sort(arr);
+    int[] fre=new  int[10000000];
     
-    for(int i=0;i<n-1;i+=2){
-        if(arr[i]!=arr[i+1]){
-        System.out.print(arr[i]);
-        break;
-            
+    for(Integer i:arr)
+        fre[i]++;
+    
+    for(int i=0;i<fre.length;i++){
+        if(fre[i]==1){
+            System.out.print(i);
         }
     }
+    
 	}
 }
