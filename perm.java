@@ -3,11 +3,16 @@ public class Main
 {
   static  TreeSet<String> list=new TreeSet<String>();
 	public static void main(String[] args) {
+	    boolean kk=false;
 		Scanner in=new Scanner(System.in);
 		String str=in.nextLine();
 		per("",str);
 		for(String i:list){
-		    System.out.println(i);
+            if(kk){
+                System.out.println();
+            }
+		    System.out.print(i);
+		    kk=true;
 		}
 	}
 	static void per(String res,String str){
