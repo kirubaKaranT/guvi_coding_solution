@@ -1,3 +1,10 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
 import java.util.*;
 public class Main
 {
@@ -21,7 +28,8 @@ public class Main
 	    while(!stack.isEmpty()){
 	        System.out.print(stack.pop()+" ");
 	    }
-	    System.out.print("\n"+max);
+	    System.out.println();
+	    System.out.print(max);
 	}
 	
 	
