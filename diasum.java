@@ -12,8 +12,9 @@ public class Main
 		    }
 		}
 		int sum=0;
+		int j=n-1;
 		for(int i=0;i<n;i++){
-		    sum+=arr[i][i];
+		    sum+=arr[i][j--];
 		}
 		System.out.print(sum);
 	}
