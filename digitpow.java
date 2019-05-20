@@ -15,6 +15,6 @@ int kk=0,pow=(n+"").length()-1;
         
     }
 
-   System.out.print(kk);
+   System.out.println(kk);
 	}
 }
