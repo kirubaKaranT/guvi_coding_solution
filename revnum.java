@@ -10,6 +10,6 @@ public class Main
 	    for(int i=n.length()-1;i>=0;i--){
 	        res+=n.charAt(i);
 	    }
-	    System.out.print(res);
+	    System.out.print("\n"+res);
 	}
 }
