@@ -10,7 +10,7 @@ public class Main
             m+=n.charAt(i);
             m+=n.charAt(i-1);
         }
-        System.out.print(m);
+        System.out.print("\n"+m+"\n");
         
 	}
 }
