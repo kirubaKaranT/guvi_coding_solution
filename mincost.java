@@ -1,19 +1,32 @@
-import java.util.*;
+import  java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
 		String x=in.next();
 		String y=in.next();
-		int n=x.length(),m=y.length(),i=0,j=0;
-        int kk=0;
-        while(i<n&&j<m){
-            if(!(x.charAt(i++)==y.charAt(j++))){
-                kk++;
-            }
-        }		
-        kk+=Math.abs(m-n);
-        
-        System.out.print(kk);
+		System.out.print(kk(x,y));
+	}
+	public static int kk(String x,String y){
+	    int res=0;
+	    int i=0,j=0;
+	    while(i<x.length()&&j<y.length()){
+	        if(x.charAt(i)==y.charAt(j)){
+	            i++;
+	            j++;
+	        }else{
+	            j++;
+	            res++;
+	        }
+	    }
+	    int remi=x.length()-i;
+	    int remj=y.length()-i;
+	    if(remi>remj){
+	        return remi;
+	    }
+	    else{
+	        return remj;
+	    }
+	  //  return res;
 	}
 }
