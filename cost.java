@@ -18,7 +18,7 @@ public class Main
 	    int kk=0;
 	    int i=0;
 	    while(i<x.length()){
-	        kk+=Math.abs(x.charAt(i)-y.charAt(i));
+	        kk+=(y.charAt(i)-x.charAt(i));
 	        i++;
 	    }
 	    while(i<y.length()){
