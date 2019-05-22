@@ -5,7 +5,7 @@ public class Main
 		Scanner in=new Scanner(System.in);
 		String x=in.next();
 		String y=in.next();
-		System.out.print(kk(x,y));
+		System.out.print(Math.max(kk(x,y),kk(y,x)));
 	}
 	public static int kk(String x,String y){
 	    int res=0;
