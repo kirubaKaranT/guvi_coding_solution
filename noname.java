@@ -15,9 +15,9 @@ public class Main
 	    int count=y.length()/x.length();
 	    String t="";
 	    while(count-->0){
-	        t=t+y;
+	        t=t+x;
 	    }
-	    if(!x.equals(t)){
+	    if(!y.equals(t)){
 	        return -1;
 	    }
 	    return y.length()/x.length();
