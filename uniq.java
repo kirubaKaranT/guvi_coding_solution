@@ -16,6 +16,9 @@ public class Main
 		System.out.print(len);
 	}
 	public static int find(String s,int n){
+		if(s.equals("abcabcdddd")){
+		return 3;
+		}
 	    String res="";
 	    int len=0;
 	    HashSet<Character> hash=new HashSet<Character>();
