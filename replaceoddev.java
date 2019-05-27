@@ -15,6 +15,7 @@ public class Main
         String res="",temp="";
         boolean odd=true;
         for(int i=0;i<kk.length();i++){
+            if(kk.charAt(i)!='.'){
             if(!(kk.charAt(i)==' '))
             temp=temp+kk.charAt(i);
             else{
@@ -30,7 +31,7 @@ public class Main
                 }
                 temp="";
             }
-        }
+            }        }
         
                 if(odd){
                     odd=false;
