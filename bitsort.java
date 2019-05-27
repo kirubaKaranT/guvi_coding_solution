@@ -38,7 +38,7 @@ public class Main
 	    	    }
 	    	}
 	    	for(Integer it:arr){
-	    	    System.out.print(it+" ");
+	    	    System.out.println(it);
 	    	}
 	}
 	public static int count(int a){
