@@ -8,11 +8,12 @@ public class Main {
         int w=in.nextInt();
         int[] val=new int[n];
         int[] wei=new int[n];
-        for(int i=0;i<n;i++){
-            val[i]=in.nextInt();
-        }
+        
         for(int i=0;i<n;i++){
             wei[i]=in.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            val[i]=in.nextInt();
         }
         System.out.print(find(val,wei,n,w));
     }
