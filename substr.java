@@ -7,7 +7,7 @@ public class Main
         String s=in.next();
         int n=in.nextInt();
         for(int i=0;i<=s.length()-n;i++){
-            System.out.print(s.substring(9,i+n)+" ");
+            System.out.print(s.substring(i,i+n)+" ");
         }
 	}
 
