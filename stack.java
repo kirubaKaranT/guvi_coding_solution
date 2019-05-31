@@ -19,7 +19,7 @@ public class Main
 		    if(i!=n-1)
 		    System.out.print(stack.pop()+"->");
 		    else{
-		        System.out.print(stack.pop()+" ");
+		        System.out.println(stack.pop()+" ");
 		    }
 		    
 		}
