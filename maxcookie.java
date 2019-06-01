@@ -12,14 +12,14 @@ public class Main
 		Scanner in=new Scanner(System.in);
 		int n=in.nextInt();
 		int magic=in.nextInt();
-		//int sumofall=0;
+		int sumofall=0;
 		int[] req=new int[n];
 		int[] avail=new int[n];
 		int[] count=new int[n];
 		int[] rem=new int[n];
 		for(int i=0;i<n;i++){
 		    req[i]=in.nextInt();
-		  //  sumofall+=req[i];
+		    sumofall+=req[i];
 		}
 		for(int i=0;i<n;i++){
 		    avail[i]=in.nextInt();
@@ -32,8 +32,8 @@ public class Main
 		    }
 		     rem[i]=avail[i]%req[i];
 		}
-		//int magicalcookie=magic/sumofall;
-		//magic=magic%sumofall;
+		int magicalcookie=magic/sumofall;
+		magic=magic%sumofall;
 		int curr=min;
 		while(magic>0){
 		    for(int i=0;i<n;i++){
@@ -56,6 +56,6 @@ public class Main
 		for(int i=0;i<n;i++){
 		    min=Math.min(count[i],min);
 		}
-		System.out.print(min);
+		System.out.print(min+magicalcookie);
 	}
 }
