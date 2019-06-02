@@ -21,22 +21,30 @@ public class Main
     fuel=fuel-station;
     while(n-->0){
       if(forward){
-       
-       if(2*(dis-station)>fuel){
+        if(n==0&&(dis-station)>fuel){
          fuel=tank;
+          refuel++;
+        }
+        else if(n!=0&&2*(dis-station)>fuel){
+         fuel=tank;
+         refuel++;
          if(2*(dis-station)>fuel){
            refuel=-1;
            break;
          }
 
-         refuel++;
-       }
+         
+        }
        fuel=fuel-(2*(dis-station));
         forward=false;
       }
       else{
-        
-        if(2*station>fuel){
+        if(n==0&&station>fuel){
+          fuel=tank;
+          refuel++;
+        }
+
+        else if(n!=0&&2*station>fuel){
           fuel=tank;
           if(2*station>fuel){
             refuel=-1;
