@@ -8,7 +8,7 @@ public class Main {
     boolean not=true;
     int max=(int)Math.pow(10,(n+"").length()+1);
     for(int i=n+1;i<max;i++){
-      if(isana(i+"",n+"")){
+      if(isana(new String(n+""),new String(i+""))&&isana(new String(i+""),new String(n+""))){
         System.out.print(i);
         not=false;
         break;
@@ -32,6 +32,7 @@ public class Main {
                 for(Character c:s.toCharArray()){
                     if(!hash.contains(c)){
                         anagram=false;
+                        return false; 
                     }
                 }
             }
