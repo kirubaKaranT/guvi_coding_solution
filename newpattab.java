@@ -8,36 +8,24 @@ public class Main {
     
     int max=0,t=0;
     boolean a=true;
-    for(int i=0;i<s.length();i++){
-      if(a){
-        if(s.charAt(i)=='a'){
-          t++;
-          a=false;
-        }
-        else{
-          t=0;
-          a=true;
-        }
-
+    for(int i=0;i<s.length()-1;i++){
+      if(s.charAt(i)=='a'&&s.charAt(i+1)=='b'){
+        t+=2;
+        i+=1;
+        if()
       }
       else{
-        if(s.charAt(i)=='b'){
-          t++;
-          a=true;
-        }
-        else{
-          t=0;
-          a=true;
-        }
+        t=0;
       }
       if(t>max){
         max=t;
       }
     }
-  if(s.contains("ab"))
-   System.out.print(max);
-      else{
-        System.out.print(0);
-      }
+    
+   if(s.contains("ab"))
+     System.out.print(max);
+    else{
+      System.out.print(0);
+    }
   }
 }
