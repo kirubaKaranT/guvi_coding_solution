@@ -12,7 +12,7 @@ public class Main {
       if(s.charAt(i)=='a'&&s.charAt(i+1)=='b'){
         t+=2;
         i+=1;
-        if()
+        
       }
       else{
         t=0;
