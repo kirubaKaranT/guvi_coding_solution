@@ -11,10 +11,7 @@ public class Main {
     }
     Arrays.sort(arr);
     for(int i=0;i<n;i++){
-    if(i!=n-1)
     System.out.print(arr[i]+" ");
-    else
-    System.out.print(arr[i]);
     }
   }
 }
