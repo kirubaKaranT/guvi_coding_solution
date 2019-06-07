@@ -18,7 +18,7 @@ public class Main {
 
     if(s.contains("@")&&s.contains(".")){
       
-      if(at==1&&dot==1&&s.substring(s.indexOf('@'),s.indexOf('.')+1).length()>=4&&s.substring(0,s.indexOf('@')).length()>=3&&".com".equals(s.substring(s.indexOf('.')))){
+      if(at==1&&dot==1&&s.substring(s.indexOf('@')+1,s.indexOf('.')).length()<=5&&s.substring(0,s.indexOf('@')).length()>=3&&".com".equals(s.substring(s.indexOf('.')))){
         System.out.print("YES");
         kk=false;
       }
