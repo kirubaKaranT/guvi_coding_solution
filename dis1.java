@@ -10,17 +10,22 @@ public class Main {
     for(int i=0;i<n;i++){
       arr[i]=in.nextInt();
     }
+    int min=Integer.MAX_VALUE;
+     
+    int u=in.nextInt();
+    int v=in.nextInt();
+    for(int i=0;i<n;i++){
+      if(arr[i]==u){
+        for(int j=0;j<n;j++){
+          if(arr[j]==v){
+            min=Math.min(Math.abs(i-j),min);
+          }
+        }
+      }
+    }
 
-      System.out.print(Math.abs(find(in.nextInt())-find(in.nextInt())));
+      System.out.print(min);
       
   }
-public static int find(int k){
-  for(int i=0;i<arr.length;i++){
-    if(arr[i]==k){
-      return i;
-     
-    }
-  }
-  return -1;
-}
+
 }
