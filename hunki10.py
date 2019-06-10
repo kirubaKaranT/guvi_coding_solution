@@ -1,7 +1,7 @@
 
 n=int(input())
-a=list(map(int,input().split()))
 m=int(input())
+a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 kk=True
 for i in range(0,m):
