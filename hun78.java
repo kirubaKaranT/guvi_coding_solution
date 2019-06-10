@@ -7,6 +7,11 @@ public class Main
     int node=in.nextInt();
     int e=in.nextInt();
     int[][] path=new int[e][2];
+    if(e==0){
+    System.out.print(1);  
+    
+    }
+    else{
     while(e-->0){
       path[e][0]=in.nextInt();
       path[e][1]=in.nextInt();
@@ -15,6 +20,7 @@ public class Main
     find(path,1,path[path.length-1][0]);
     System.out.print(height);
 	}
+  }
   public static void find(int[][] path,int h,int l){
     
     for(int i=0;i<path.length;i++){
