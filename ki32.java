@@ -11,10 +11,10 @@ public class Main {
       hash.add(in.nextInt());
     }
     if(hash.contains(k)){
-      System.out.print("yes");
+      System.out.print("Yes");
     }
     else{
-      System.out.print("no");
+      System.out.print("No");
     }
 
     
