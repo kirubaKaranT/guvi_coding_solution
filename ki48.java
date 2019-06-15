@@ -12,14 +12,16 @@ public class Main {
           boolean sub=true;
           int k=i;
           int l=j;
+          int c=0;
           while(k<a.length()&&l<b.length()){
               if(a.charAt(i)!=b.charAt(j)){
                 sub=false;
               }
               k++;
               l++;
+              c++;
           }
-          if(sub){
+          if(sub&&c==b.length()){
             System.out.print(i);
             System.exit(0);        
           }
