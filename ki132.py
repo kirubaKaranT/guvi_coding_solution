@@ -1,3 +1,5 @@
+
+
 num=input()
 arr=[]
 count=0
