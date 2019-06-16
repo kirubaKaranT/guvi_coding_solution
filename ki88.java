@@ -7,7 +7,7 @@ public class Main {
     int n=in.nextInt();
   int k=in.nextInt();
     
-    System.out.print(n>>k);
+    System.out.print((n>>k)+".00");
     
   }
 }
