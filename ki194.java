@@ -12,7 +12,7 @@ public class Main {
       System.out.print('D');
     }
     else if((a=='R'&&b=='P')||(b=='R'&&a=='P')){
-      System.out.print('p');
+      System.out.print('P');
     }
     else if((a=='S'&&b=='P')||(b=='S'&&a=='P')){
       System.out.print('S');
