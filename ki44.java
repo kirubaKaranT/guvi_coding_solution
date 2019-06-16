@@ -7,11 +7,11 @@ public class Main {
     String a=in.next();
     int k=in.nextInt();
     k=k%a.length();
-    
-    for(int i=k;i<a.length();i++){
+    int pos=a.length()-k;
+    for(int i=pos;i<a.length();i++){
     System.out.print(a.charAt(i));
     }
-    for(int i=0;i<k;i++)
+    for(int i=0;i<pos;i++)
      System.out.print(a.charAt(i));
     
     
