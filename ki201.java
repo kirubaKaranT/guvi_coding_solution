@@ -5,8 +5,20 @@ public class Main {
   public static void main(String[] args) {
     Scanner in=new Scanner(System.in);
     int n=in.nextInt();
-    for(int i=0;i<=n;i++)
-    System.out.print(catalan(i)+" ");
+    if(n==0)
+		{
+			System.out.print(1);
+		}
+		else{
+		for (int i = 0; i < n; i++) 
+		{ 
+			System.out.print(catalan(i));
+				if(i<n-1)
+				{
+					System.out.print(" ");
+				}
+		}
+		}
       
   }
  public static  int catalan(int n) { 
